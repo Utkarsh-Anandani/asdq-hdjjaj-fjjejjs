@@ -1,39 +1,73 @@
 .appbar {
-    display: flex;
-    width: screen;
-    height: 5vh;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-    border-bottom: 1px solid rgb(54, 53, 53);
-    font-size: x-large;
-    font-weight: 400;
-    color: rgb(255, 255, 255);
+  display: flex;
+  width: screen;
+  height: 5vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid rgb(54, 53, 53);
+  font-size: x-large;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
 }
 
 .editor {
-    width: 100%;
-    height: 40%;
-    border-bottom: 1px solid rgb(54, 53, 53);
+  width: 100%;
+  height: 35vh;
+  border-bottom: 1px solid rgb(54, 53, 53);
 }
 
 .editor-header {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(51, 51, 51);
-    color: white
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(51, 51, 51);
+  color: white;
 }
 
 .editor-header-left {
-    background-color: #1e1e1e;
-    padding: 10px 20px;
+  background-color: #1e1e1e;
+  padding: 10px 20px;
 }
 
 .editor-instance {
-    border-bottom: 1px solid rgb(54, 53, 53);
+  border-bottom: 1px solid rgb(54, 53, 53);
 }
 
 .output {
-    width: 100%;
-    flex: 1;
+  width: 100%;
+  height: 50vh;
+  flex: 1;
+}
+
+.output-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: rgb(51, 51, 51);
+}
+
+.output-header-left {
+  padding: 15px 10px;
+  background-color: rgb(35, 34, 34);
+  border-right: 1px solid rgb(54, 53, 53);
+}
+
+.table-component {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1a1a1a;
+  color: white;
+  font-size: small;
+  border: 2px solid #444;
+}
+
+.table-container {
+  max-width: 50vw;
+  max-height: 40vh;
+  padding: 10px 30px;
+  margin: auto;
+  overflow: auto;
 }
