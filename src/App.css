@@ -1,0 +1,32 @@
+.app-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    display: flex;
+}
+
+.left {
+    width: 20vw;
+    height: 90vh;
+    border: 1px solid rgb(54, 53, 53);
+}
+
+.right {
+    width: 30vw;
+    height: 90vh;
+    border: 1px solid rgb(54, 53, 53);
+}
+
+.middle {
+    width: 50vw;
+    height: 90vh;
+    border: 1px solid rgb(54, 53, 53);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
