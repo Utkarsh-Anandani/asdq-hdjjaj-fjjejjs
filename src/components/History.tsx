@@ -4,7 +4,7 @@ import TrashIcon from "../common/TrashIcon";
 
 function History() {
   const { history, clearHistory } = useHistory();
-  const { setQuery, query } = useQuery();
+  const { setQuery } = useQuery();
 
   const handleClearAction = () => {
     clearHistory();
@@ -27,8 +27,8 @@ function History() {
       </div>
       <div className="history-content">
         {history.length > 0 ? (
-          history.map((value) => {
-            return <div onClick={handleClickAction} className="history-content-item">{value}</div>;
+          history.map((value, index) => {
+            return <div key={index} onClick={handleClickAction} className="history-content-item">{value}</div>;
           })
         ) : (
           <div className="history-content-cleared">No recent activity</div>

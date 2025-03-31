@@ -8,7 +8,7 @@ interface queryContextType {
 const QueryContext = createContext<queryContextType | undefined>(undefined);
 
 export function QueryProvider({ children }: { children: ReactNode }) {
-  const [query, setQuery] = useState<string>(`\n-- Type Your Query Here\n\nSELECT * FROM Users\nWHERE name=Utkarsh;`);
+  const [query, setQuery] = useState<string>(`\n-- Type Your Query Here`);
 
   return (
     <QueryContext.Provider value={{ query, setQuery }}>

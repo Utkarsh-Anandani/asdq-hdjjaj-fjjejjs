@@ -1,4 +1,3 @@
-import '@/components/Components.css'
 function AppBar() {
     return(
         <div className="appbar">

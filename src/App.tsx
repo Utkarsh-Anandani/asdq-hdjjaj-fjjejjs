@@ -4,6 +4,8 @@ const AppBar = React.lazy(() => import('./components/AppBar.tsx'))
 import SQLEditor from './components/Editor';
 import Output from './components/Output.tsx';
 import History from './components/History.tsx';
+import Example from './components/Example.tsx';
+import '@/components/styles/Components.css';
 
 function App() {
 
@@ -13,7 +15,9 @@ function App() {
         <AppBar />
       </Suspense>
       <div className='main-container'>
-      <div className="left"></div>
+      <div className="left">
+        <Example />
+      </div>
       <div className="middle">
         <SQLEditor />
         <Output />

@@ -97,6 +97,7 @@
   height: 85%;
   max-width: 20vw;
   padding: 20px;
+  overflow-x: hidden;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -113,6 +114,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 
 .history-content-item:hover {
@@ -128,4 +130,42 @@
   justify-content: center;
   font-size: small;
   color: #838383;
+}
+
+.example-content {
+  height: 85%;
+  max-width: 20vw;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.example-content-item {
+  width: 15vw;
+  padding: 10px 15px;
+  background-color: rgb(51, 51, 51);
+  border-radius: 10px;
+  font-size: small;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.example-content-item:hover {
+  background-color: rgb(100, 100, 100);
+  transition: all ease-in-out 0.3s;
+}
+
+.example-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  padding: 10px 20px;
 }
