@@ -12,14 +12,16 @@ function History() {
   };
 
   const handleClickAction = (e: any) => {
-    setQuery(e.currentTarget.innerHTML);
+    const newQuery = e.currentTarget.textContent;
+    setQuery("");
+    setTimeout(() => setQuery(newQuery), 0);
     alert("Query pasted in Editor");
   };
 
   const handleHistoryClose = () => {
     const element = document.querySelector(".right");
-    if(element) {
-      element.classList.remove("right-open")
+    if (element) {
+      element.classList.remove("right-open");
     }
   };
 
@@ -35,7 +37,9 @@ function History() {
             <button onClick={handleHistoryClose}>
               <CrossIcon />
             </button>
-          ) : ""}
+          ) : (
+            ""
+          )}
         </div>
       </div>
       <div className="history-content">
