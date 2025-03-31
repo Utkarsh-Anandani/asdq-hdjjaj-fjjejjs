@@ -4,6 +4,7 @@ import TrashIcon from "../common/TrashIcon";
 import { useQuery } from "../utils/contexts/QueryContext";
 import { useHistory } from "../utils/contexts/HistoryContext";
 import { useEffect, useState } from "react";
+import HistoryIcon from "../common/HistoryIcon";
 
 function SQLEditor() {
   const { query, setQuery } = useQuery();
@@ -37,6 +38,13 @@ function SQLEditor() {
     }, 3000);
   };
 
+  const handleHistoryOpen = () => {
+    const element = document.querySelector(".right");
+    if(element) {
+      element.classList.remove("right-close")
+    }
+  }
+
   return (
     <div className="editor">
       <div className="editor-header">
@@ -51,6 +59,12 @@ function SQLEditor() {
           <button disabled={isLoading} onClick={handleRunAction}>
             {isLoading ? "Processing..." : "Run"}
           </button>
+          {window.innerWidth < 1000 ? 
+            <button onClick={handleHistoryOpen}>
+            <HistoryIcon />
+          </button> :
+          ""
+          }
         </div>
       </div>
       <Editor

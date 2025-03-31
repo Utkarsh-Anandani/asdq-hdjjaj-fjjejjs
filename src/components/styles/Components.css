@@ -2,8 +2,8 @@
   display: flex;
   width: screen;
   height: 5vh;
-  justify-content: space-between;
   align-items: center;
+  gap: 10px;
   padding: 20px 30px;
   border-bottom: 1px solid rgb(54, 53, 53);
   font-size: x-large;

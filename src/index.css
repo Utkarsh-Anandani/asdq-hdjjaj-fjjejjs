@@ -4,7 +4,7 @@ body {
   background-color: rgb(35, 34, 34);
   color: white;
   font-family: "Courier New", Courier, monospace;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 button {

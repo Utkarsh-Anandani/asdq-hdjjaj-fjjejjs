@@ -29,7 +29,7 @@ function Table({ data }: { data: any[] }) {
                     </tbody>
                 </table>
             ) : (
-                <p>No data available</p>
+                <p>Found 0 rows</p>
             )}
         </div>
     );

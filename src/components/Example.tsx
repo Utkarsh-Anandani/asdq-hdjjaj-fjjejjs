@@ -1,3 +1,4 @@
+import CrossIcon from "../common/CrossIcon";
 import { useQuery } from "../utils/contexts/QueryContext";
 
 function Example() {
@@ -28,10 +29,23 @@ function Example() {
     alert("Query pasted into Editor.");
   };
 
+  const handleExampleClose = () => {
+    const element = document.querySelector(".left");
+    if(element){
+      element.classList.add("left-close");
+    }
+  }
+
   return (
     <div className="example-container">
       <div className="example-header">
         <div>Example Queries</div>
+        {window.innerWidth < 1000 ? 
+            <button onClick={handleExampleClose}>
+            <CrossIcon />
+          </button> :
+          null
+          }
       </div>
       <div className="example-content">
         {ExampleQueries.map((query, index) => {
