@@ -1,5 +1,5 @@
 import Table from "../common/Table";
-import ProductDetails from '../../public/products.json';
+import ProductDetails from '../assets/products.json';
 
 function Output() {
     return(

@@ -3,6 +3,7 @@ import React, { Suspense } from 'react';
 const AppBar = React.lazy(() => import('./components/AppBar.tsx'))
 import SQLEditor from './components/Editor';
 import Output from './components/Output.tsx';
+import History from './components/History.tsx';
 
 function App() {
 
@@ -17,7 +18,9 @@ function App() {
         <SQLEditor />
         <Output />
       </div>
-      <div className="right"></div>
+      <div className="right">
+        <History />
+      </div>
       </div>
     </main>
   )

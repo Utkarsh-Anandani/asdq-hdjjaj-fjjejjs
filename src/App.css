@@ -16,13 +16,13 @@
 }
 
 .right {
-    width: 30vw;
+    width: 20vw;
     height: 90vh;
     border: 1px solid rgb(54, 53, 53);
 }
 
 .middle {
-    width: 50vw;
+    width: 60vw;
     height: 90vh;
     border: 1px solid rgb(54, 53, 53);
     flex: 1;
