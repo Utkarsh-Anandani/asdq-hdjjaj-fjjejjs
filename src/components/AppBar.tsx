@@ -4,7 +4,7 @@ function AppBar() {
     const handleExampleOpen = () => {
         const element = document.querySelector(".left");
         if(element) {
-            element.classList.remove("left-close");
+            element.classList.add("left-open");
         }
     }
     return(

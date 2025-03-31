@@ -41,7 +41,7 @@ function SQLEditor() {
   const handleHistoryOpen = () => {
     const element = document.querySelector(".right");
     if(element) {
-      element.classList.remove("right-close")
+      element.classList.add("right-open")
     }
   }
 

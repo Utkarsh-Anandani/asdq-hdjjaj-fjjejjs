@@ -32,7 +32,7 @@ function Example() {
   const handleExampleClose = () => {
     const element = document.querySelector(".left");
     if(element){
-      element.classList.add("left-close");
+      element.classList.remove("left-open");
     }
   }
 

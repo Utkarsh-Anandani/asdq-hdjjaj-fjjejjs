@@ -3,7 +3,7 @@
     position: relative;
   }
   .right {
-    display: block;
+    display: none;
     height: 60vh;
     width: 50vw;
     position: absolute;
@@ -53,7 +53,7 @@
   }
 
   .left {
-    display: block;
+    display: none;
     height: 60vh;
     width: 50vw;
     position: absolute;

@@ -19,7 +19,7 @@ function History() {
   const handleHistoryClose = () => {
     const element = document.querySelector(".right");
     if(element) {
-      element.classList.add("right-close")
+      element.classList.remove("right-open")
     }
   };
 
